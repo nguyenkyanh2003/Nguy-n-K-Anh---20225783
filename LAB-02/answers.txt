@@ -1,0 +1,15 @@
+7.Create Carts of DigitalVideoDiscs
+The result should be: 
+The Lion King Has been added!
+Star Wars Has been added!
+Aladin Has been added!
+Total Cost is :
+63.89
+8.Removing items from the cart 
+The result should be:
+The Lion King Has been added!
+Star Wars Has been added!
+Aladin Has been added!
+Aladinhas been removed!
+Total Cost is :
+44.9
