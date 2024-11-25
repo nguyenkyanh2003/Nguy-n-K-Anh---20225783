@@ -57,16 +57,15 @@ public class DigitalVideoDisc {
 	public float getCost() {
 		return cost;
 	}
-	public String toString() {
-		return "Title: " + title + ", Cost: $" + cost;
-	
+	public String toString()
+	{
+		return String.format(getId()+". "+getTitle()+" - " + getCategory()+" - "+ getDirector()
+		+ " - " + getLength()+ " - " + getCost());
 	}
 
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
-
- 
 }
 
