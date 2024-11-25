@@ -15,6 +15,7 @@ DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars",
 	anOrder.removeDigitalVideoDisc(dvd3);
 	
 	System.out.println("Total Cost is :" +anOrder.totalCost());
+	
   
 }
 }
