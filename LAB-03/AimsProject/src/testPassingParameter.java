@@ -1,4 +1,3 @@
-
 public class testPassingParameter {
 public static void main(String[] args) {
 	DigitalVideoDisc jungleDVD = new DigitalVideoDisc("Jungle");
