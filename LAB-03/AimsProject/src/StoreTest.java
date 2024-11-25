@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 
-public class StoreTest {
 
-=======
 public class StoreTest {
 public static void main(String[] args) {
 	Store store = new Store(5);
@@ -19,5 +16,5 @@ public static void main(String[] args) {
 	store.removeDVD(dvd2);
 	store.displayStore();
 }
->>>>>>> 508e3c3d16dfd2cabbcc8ad4a99ea31a2d0f90d4
+
 }

@@ -1,10 +1,4 @@
 
-<<<<<<< HEAD
-public class Store {
-
-}
-=======
-
 public class Store {
 private DigitalVideoDisc itemsInStore[];
 private int numberOfItems;
@@ -59,4 +53,4 @@ public void addDVD(DigitalVideoDisc dvd)
  }
 }
 
->>>>>>> 508e3c3d16dfd2cabbcc8ad4a99ea31a2d0f90d4
+
