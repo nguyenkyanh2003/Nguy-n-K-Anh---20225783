@@ -58,22 +58,19 @@ public class DigitalVideoDisc {
 	public float getCost() {
 		return cost;
 	}
-	public String toString() {
-		return "Title: " + title + ", Cost: $" + cost;
-	
+//	public String toString() {
+//		return "Title: " + title + ", Cost: $" + cost;
+//	
+//	}
+	public String toString()
+	{
+		return String.format(getId()+". "+getTitle()+" - " + getCategory()+" - "+ getDirector()
+		+ " - " + getLength()+ " - " + getCost());
 	}
 	public int getId() {
 		return id+1;
 	}
-	 public boolean isMatch(int id)
-	 {
-		 return this.id == id;
-	 }
-	 public boolean isMatch(String title)
-	 {
-		 return this.title.toLowerCase().contains(title.toLowerCase());
-	 }
-
+	
  
 }
 

@@ -67,6 +67,14 @@ public class Cart {
 	  }
 	  return s;
   }
+  public void printCART()
+  {
+ 	 System.out.println("*************CART*************");
+ 	 System.out.println("Ordered Items:");
+ 	 System.out.println(toString());
+ 	 System.out.println("Total cost: $"+totalCost());
+ 	 System.out.println("******************************");
+  }
   
 }
   
