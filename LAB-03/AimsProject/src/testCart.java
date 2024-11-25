@@ -1,23 +1,20 @@
-<<<<<<< HEAD
-
-public class StoreTest {
-
-=======
-public class StoreTest {
+public class testCart {
 public static void main(String[] args) {
-	Store store = new Store(5);
+	Cart cart= new Cart();
 	DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King"
 			,"Animation","Roger Allers",87,19.95f);
+	cart.addDigitalVideoDisc(dvd1);
 	DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars",
 			"Science Fiction","George Lucas",87,24.95f);
+    cart.addDigitalVideoDisc(dvd2);
 	DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin",
 			"Animation",18.99f);
-	store.addDVD(dvd1);
-	store.addDVD(dvd2);
-	store.addDVD(dvd3);
-	store.displayStore();
-	store.removeDVD(dvd2);
-	store.displayStore();
+	cart.addDigitalVideoDisc(dvd3);
+
+	cart.printCART();
+	cart.searchCart("Aladin");
+	cart.searchCart(1);
+	
 }
->>>>>>> 508e3c3d16dfd2cabbcc8ad4a99ea31a2d0f90d4
 }
+
