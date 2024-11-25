@@ -1,5 +1,4 @@
 
-
 public class Cart {
   public static final int MAX_NUMBERS_ORDERED = 20;
   private DigitalVideoDisc itemOrdered[]=
@@ -67,6 +66,7 @@ public class Cart {
 	  }
 	  return s;
   }
+  
   public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList)
   {
 	
@@ -102,53 +102,49 @@ public class Cart {
   {
 	  return qtyOrdered;
   }
-  public void printCART()
-  {
- 	 System.out.println("*************CART*************");
- 	 System.out.println("Ordered Items:");
- 	 System.out.println(toString());
- 	 System.out.println("Total cost: $"+totalCost());
- 	 System.out.println("******************************");
-  }
-  public void searchCart(int id)
-  {
-   boolean search  = false;
-   for(int i=0;i<qtyOrdered;i++)
-   {
-  	 if(itemOrdered[i].isMatch(id-1))
-  	 {
-  		 search = true;
-  		 System.out.println("Found item with ID: "+id);
-  		 System.out.println(itemOrdered[i].toString());
-           break;
-  	 }
-  	
-   }
-   if(search==false) {
-  	 System.out.println("Not found!");
-  	 }
-  }
-  public void searchCart(String title)
-  {
-   boolean search = false;
-   for(int i=0;i<qtyOrdered;i++)
-   {
-  	 if(itemOrdered[i].isMatch(title))
-  	 {
-  		 search = true;
-  		 System.out.println("Found item with title included : "+title);
-  		 System.out.println(itemOrdered[i].toString());
-  		break;
-  	 }
-  	
-   }
-   if(search==false)
-  	 System.out.println("Not found!");
-  }
   
-
-  }
+ public void printCART()
+ {
+	 System.out.println("*************CART*************");
+	 System.out.println("Ordered Items:");
+	 System.out.println(toString());
+	 System.out.println("Total cost: $"+totalCost());
+	 System.out.println("******************************");
+ }
+public void searchCart(int id)
+{
+ boolean search  = false;
+ for(int i=0;i<qtyOrdered;i++)
+ {
+	 if(itemOrdered[i].isMatch(id-1))
+	 {
+		 search = true;
+		 System.out.println("Found item with ID: "+id);
+		 System.out.println(itemOrdered[i].toString());
+         break;
+	 }
+	
+ }
+ if(search==false) {
+	 System.out.println("Not found!");
+	 }
+}
+public void searchCart(String title)
+{
+ boolean search = false;
+ for(int i=0;i<qtyOrdered;i++)
+ {
+	 if(itemOrdered[i].isMatch(title))
+	 {
+		 search = true;
+		 System.out.println("Found item with title included : "+title);
+		 System.out.println(itemOrdered[i].toString());
+		break;
+	 }
+	
+ }
+ if(search==false)
+	 System.out.println("Not found!");
+}
+}
   
-
-  
-
