@@ -24,6 +24,7 @@ public static void main(String[] args) {
 				"Science Fiction","George Lucas",87,24.95f);
 	  DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin",
 			"Animation",18.99f);
+
 	  DigitalVideoDisc [] dvdList = new DigitalVideoDisc[3];
 	  dvdList[0]= new DigitalVideoDisc("The abc","Muc King",14.2f);
 	  dvdList[1] = new DigitalVideoDisc("The def","Lee King",18.5f);
@@ -35,5 +36,14 @@ public static void main(String[] args) {
 	 System.out.println(anOrder.toString());
 	 
 	 System.out.println("Total cost is: "+anOrder.totalCost());
+
+	anOrder.addDigitalVideoDisc(dvd3);
+//	anOrder.removeDigitalVideoDisc(dvd3);
+	
+	System.out.println("Total Cost is :" +anOrder.totalCost());
+	 anOrder.printCART();
+	
+  
+
 }
 }
