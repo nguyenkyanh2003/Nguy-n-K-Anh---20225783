@@ -30,8 +30,8 @@ public static void main(String[] args) {
 	System.out.println("The string read from the file:");
 	System.out.println(outputString.toString());
 }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> dc228a8771c615f4725a54702676cfdb619533b3
+
+
+
