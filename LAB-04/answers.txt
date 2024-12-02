@@ -1,0 +1,34 @@
+Question: Alternatively, to compare items in the cart, instead of using Comparator, we can use the Comparable interface and override the compareTo()method. You can refer to the Java docs to see the information of this interface.  
+
+Suppose we are taking this Comparable interface approach. 
+- What class should implement the Comparable interface? 
+-> Class Media (Lớp trừu tượng chứa các phương thức so sánh các đối tượng)
+
+- In those classes, how should you implement the compareTo()method be to reflect the ordering that we want? 
+-> chúng ta nên so sánh các thuộc tính của đối tượng:
+VD:
+ public int compareTo(Media media)
+{
+ if(!this.getTitle().compareTo(media.getTitle())
+    return this.getTitle().compareTo(media.getTitle());
+else
+  return Double.compare(this.getCost(),media.getCost());
+}
+
+- Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach? 
+-> Không, vì phương thức compareTo() chỉ trả về một giá trị kiểu int.
+
+- Suppose the DVDs has a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this? 
+->   public class DVD extends Media implements Comparable{
+   public int compareTo(DVD other)
+{
+    if (!this.getTitle().equals(other.getTitle())) {
+ return this.getTitle().compareTo(other.getTitle());
+ }
+ else if (this instanceof DVD && other instanceof DVD) {
+ return Integer.compare(((DVD) other).getLength(), ((DVD) 
+this).getLength());
+ }
+ else return Double.compare(this.getCost(), other.getCost());
+ }
+ }
