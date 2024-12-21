@@ -1,0 +1,4 @@
+Câu hỏi: Lớp Aims cần được cập nhật để xử lý mọi ngoại lệ phát sinh khi các phương thức play() được gọi. Điều gì xảy ra nếu bạn không cập nhật để chúng có thể bắt ngoại lệ?
+-> Trả lời:
+Nếu không cập nhật lớp Aims để xử lý ngoại lệ khi gọi phương thức play(), chương trình có thể gặp lỗi và dừng đột ngột mà không có cơ chế xử lý. Điều này khiến người dùng không thể biết nguyên nhân gây ra lỗi hoặc gặp khó khăn khi sử dụng ứng dụng.
+Bằng cách sử dụng khối try-catch, các ngoại lệ có thể được xử lý một cách phù hợp. Khi xảy ra lỗi, khối catch sẽ bắt ngoại lệ và cung cấp thông báo lỗi thông qua các phương thức như getMessage(), toString(), hoặc printStackTrace(). Nhờ đó, người dùng có thể nhận được thông tin chi tiết về sự cố, hiểu rõ vấn đề, và tiếp tục sử dụng ứng dụng một cách thuận tiện và hiệu quả hơn
